@@ -1,0 +1,12 @@
+{
+  "name": "hobbit-intuition",
+  "version": "1.0.0",
+  "description": "Twitter Bot for replacing 'Artificial Intelligence' --> 'Hobbit Intuition'",
+  "main": "index.js",
+  "repository": "git@github.com:BenDiuguid/hobbit-intuition.git",
+  "author": "Ben Diuguid <bendiuguid@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "twit": "^2.2.9"
+  }
+}
