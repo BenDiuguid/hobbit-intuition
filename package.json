@@ -6,7 +6,12 @@
   "repository": "git@github.com:BenDiuguid/hobbit-intuition.git",
   "author": "Ben Diuguid <bendiuguid@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "deploy": "now -e CONSUMER_KEY=@hi-twit-key -e CONSUMER_SECRET=@hi-twit-secret -e ACCESS_TOKEN=@hi-twit-access  -e ACCESS_TOKEN_SECRET=@hi-twit-access-secret"
+  },
   "dependencies": {
+    "dotenv": "^4.0.0",
     "twit": "^2.2.9"
   }
 }
