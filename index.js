@@ -1,3 +1,5 @@
+const { createServer } = require('http');
+
 require('dotenv').config();
 
 const Twit = require('twit');
@@ -40,3 +42,13 @@ async function handleTweet(tweet) {
   const { data } = await tweetStatus(bot, replaceAbbreviation(status));
   // console.log(data);
 }
+
+// This will cause the bot/server to run on now.sh
+const server = createServer((req, res) => {
+  res.writeHead(302, {
+    Location: 'https://twitter.com/HobbitIntuition',
+  });
+  res.end();
+});
+
+server.listen(3000);
